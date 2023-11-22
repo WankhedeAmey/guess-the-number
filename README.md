@@ -17,12 +17,13 @@ Open the ```index.html``` in any browser and play the game!
 
 
 ## Demo
-Game Running 
+###Game Running 
+
 <img src="./images/ss1.png">
 <br>
-You have won!
+###You have won!
 <img src="./images/ss2.png">
 <br>
-Game Over...
+###Game Over...
 <img src="./images/ss3.png">
 
