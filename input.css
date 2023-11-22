@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.bg-container {
+    @apply bg-gradient-to-b from-red-500 to-red-900;
+}

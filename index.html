@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./js/script.js" defer></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Guess The Number</title>
+    </head>
+    <body id="body">
+        <!-- Global Container-->
+        <div id="container" class="min-h-screen bg-[#222] ">
+            <!-- header -->
+            <section id="header">
+                <!-- container -->
+                <div class="px-8 py-10 text-white">
+                    <div class="flex flex-col items-center space-y-28">
+                        <!-- Button and text -->
+                        <div id="again-btn" class="flex justify-between w-full items-center">
+                            <button
+                                class="bg-white text-black py-4 px-8 text-xl"
+                                id="again-btn"
+                            >
+                                Again!
+                            </button>
+                            <p>(Between 1 and 20)</p>
+                        </div>
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl text-center">Guess My Number!</h1>
+                    </div>
+                </div>
+
+                <!-- Guess -->
+                <section id="guess">
+                    <div class="relative mt-20">
+                        <div
+                            class="bg-white h-2 w-full absolute top-[50%] z-0"
+                        ></div>
+                        <div class="flex justify-center">
+                            <div
+                                id="number"
+                                class="text-black py-10 px-10 bg-white text-6xl inline-block text-center mx-auto relative z-10"
+                            >
+                                ?
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Body -->
+            <section id="body">
+                <!-- Container -->
+                <div class="flex mt-20 justify-around">
+                    <!-- Input -->
+                    <form class="flex flex-col space-y-6 items-center">
+                        <input
+                            id="guessed-number"
+                            type="number"
+                            class="text-4xl text-white bg-[#222] border-4 border-white px-10 py-6 outline-none w-60 block text-center"
+                        />
+                        <button
+                            id="check-btn"
+                            class="bg-white text-black py-4 px-8 text-xl"
+                        >
+                            Check!
+                        </button>
+                    </form>
+                    <!-- Text Fields -->
+                    <div class="flex flex-col text-white w-1/3 text-xl text-left">
+                        <p id="info-text" class="mb-20">
+                            Start Guessing...
+                        </p>
+                        <p class="mb-6">💯 Score: <span id="score">20</span></p>
+                        <p>🥇 Highscore: <span id="high-score">0</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
