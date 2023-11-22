@@ -14,3 +14,8 @@ node install
 ```
 
 Open the ```index.html``` in any browser and play the game!
+
+
+## Demo
+
+
